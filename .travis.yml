@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: ySkj92TlW22017lzjXI3GN0Zop5aXPANIQhiczJF3zT9hPNZ7AoE1+rd9mXhzNQSkC+NmVQ0bCCB2E1TtjU6NFJvn1TpOUI9JvtInG/uLNh+13T+M4FzNxb0K+eHs6ZY1hByMpOoyDyivQj6hOxZAFg2iLB4VjRpx9DzCHkgiLEAgU5St3g3mrNDGBjsKl4lQW+rJsZlp9+tVa+DzJO2emI/rOYyh2FoyvRNPANnH8KZ7lcaR3kjd+fyE/GhL/HBjzW2lwP8Bxvbbcs4L0Vc+qZB6r3Edo9uEDAo3jWS0dCDs49InJWwAHNiD5cC1lYbCOYrwezwoP36tPArdQ2li4u67yocel3rSRqt3TFRb1jWCQNbq13+rTafWGdPiWpq5rMsXGv+w2nzTRsMp8BfxZs+UsslB5mWMXynl7iZuj55zNtfd42YIaI0n5V3xhu5gjAzYIdeVz6XMUBza2z2iVijvBPHephHtTH6/R02pz+pkjXqs3dz3sVJXPy+k96vp6NSe/jsPwSLo9x9vibTBn+XALOp4rmHAxZyXFNSfiKIZV4rp+e/J3G5TBSO0Sy7azBJS0eGboBTRfrAiwXNb8fBP9dd/g1n8xVd85DtVeVUDwvRMhMJlH9TiYbdDBRh/P8u5f15YCb3wgILcEGCH/4lfz0OaTBXBGe0W4iyidk=
+  app: aqueous-ridge-27082
+  on:
+    repo: PeasOfMind/react-trello-testing
